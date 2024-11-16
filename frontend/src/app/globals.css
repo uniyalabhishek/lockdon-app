@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #1a1a1a;
+  --foreground: #ffffff;
+  --accent: #ff3333;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+.lock-don-text {
+  font-family: var(--font-cc-deadline-dreaded);
+}
+
+.lock-don-text-open {
+  font-family: var(--font-cc-deadline-dreaded-open);
+}
+
+.input-field {
+  @apply bg-zinc-800 rounded-md p-3 w-full text-white border border-zinc-700;
+  font-family: var(--font-cc-deadline-dreaded-open);
+}
+
+.date-input {
+  @apply input-field appearance-none;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

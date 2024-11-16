@@ -1,0 +1,56 @@
+[
+  {
+    "target": "1",
+    "proofType": "email",
+    "amount": "2",
+    "date": "2024-11-29",
+    "email": "efdwfe",
+    "isGroupTarget": false,
+    "lockAmount": "1"
+  },
+  {
+    "target": "Still working?",
+    "proofType": "website",
+    "amount": "1",
+    "date": "2024-12-08",
+    "email": "doesthiswork",
+    "isGroupTarget": false,
+    "lockAmount": "5"
+  },
+  {
+    "target": "umm?",
+    "proofType": "email",
+    "amount": "6",
+    "date": "2024-11-18",
+    "email": "HUH",
+    "isGroupTarget": false,
+    "lockAmount": "9"
+  },
+  {
+    "target": "new!",
+    "proofType": "email",
+    "amount": "0.1",
+    "date": "2024-11-17",
+    "email": "hi@weed.com",
+    "isGroupTarget": false,
+    "lockAmount": "10000"
+  },
+  {
+    "target": "it broke",
+    "proofType": "email",
+    "amount": "0",
+    "date": "2024-11-18",
+    "email": "waaaaaa",
+    "isGroupTarget": false,
+    "lockAmount": "1"
+  },
+  {
+    "target": "Conquer World",
+    "proofType": "website",
+    "amount": "10",
+    "date": "2024-11-16",
+    "email": "ngmi@fail.com",
+    "isGroupTarget": true,
+    "lockAmount": "0.1"
+  }
+]
