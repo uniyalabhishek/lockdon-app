@@ -22,13 +22,7 @@ contract LockContract {
     address public charityAddress;
     mapping(string => address) public proofVerifiers;
 
-    event LockCreated(
-        uint256 indexed lockId,
-        address indexed owner,
-        string target,
-        uint256 amount,
-        uint256 deadline
-    );
+    event LockCreated(uint256 indexed lockId, address indexed owner, string target, uint256 amount, uint256 deadline);
     event ProofVerified(uint256 indexed lockId);
     event TokensClaimed(uint256 indexed lockId);
     event TokensToCharity(uint256 indexed lockId);
@@ -38,11 +32,7 @@ contract LockContract {
         proofVerifiers["email"] = _emailVerifier;
     }
 
-    function createLock(
-        string memory target,
-        string memory proofType,
-        uint256 deadline
-    ) public payable {
+    function createLock(string memory target, string memory proofType, uint256 deadline) public payable {
         require(msg.value > 0, "Must lock some ETH");
         require(deadline > block.timestamp, "Deadline must be in future");
         require(proofVerifiers[proofType] != address(0), "Invalid proof type");
@@ -94,10 +84,7 @@ contract LockContract {
         emit TokensToCharity(lockId);
     }
 
-    function setProofVerifier(
-        string memory proofType,
-        address verifier
-    ) public {
+    function setProofVerifier(string memory proofType, address verifier) public {
         // Add admin checks as needed
         proofVerifiers[proofType] = verifier;
     }
