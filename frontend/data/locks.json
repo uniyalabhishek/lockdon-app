@@ -52,5 +52,14 @@
     "email": "ngmi@fail.com",
     "isGroupTarget": true,
     "lockAmount": "0.1"
+  },
+  {
+    "target": "run 10k",
+    "proofType": "email",
+    "amount": "10000",
+    "date": "2024-11-19",
+    "email": "abhishuniyal@gmail.com",
+    "isGroupTarget": false,
+    "lockAmount": "0.1"
   }
 ]
