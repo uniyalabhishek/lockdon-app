@@ -13,6 +13,12 @@ Sponsor existing targets to support others to meet them, but be refunded should 
 
 Initial repo: https://github.com/uniyalabhishek/lockdon  (this repo started due to Foundry error)
 
+We built on Polygon zkEVM, using vlayer to authenticate off-chain data from email (via .eml file).
+Email sign in and wallet solution was enabled using privy. This data was fed into our smart contract and matched against the expected proof of completion. 
+
+Using our frontend users set their target and timeline and are able to view existing Targets.
+
+
 ## Foundry
 
 **Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
